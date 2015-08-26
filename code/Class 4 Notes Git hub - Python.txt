@@ -1,0 +1,5 @@
+initialize a repo locally:
+	1. initialize Git in a local directory
+	2. Create a repo on GITHUB without a README
+	3. Add remote: git remote <add origin>
+

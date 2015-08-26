@@ -1,0 +1,8 @@
+Git and GitHub
+
+basic markdown:
+
+easy to read and write markdown language: will be rendered an html.
+
+
+github pw: Bill@525
