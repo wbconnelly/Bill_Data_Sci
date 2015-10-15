@@ -1,0 +1,506 @@
+,Symbol,Sector
+0,A,None Found
+1,AA,Basic Materials
+2,AAL,Basic Materials
+3,AAP,Cyclical Consumer Goods & Services
+4,AAPL,Technology
+5,ABBV,Healthcare
+6,ABC,Non-Cyclical Consumer Goods & Services
+7,ABT,Healthcare
+8,ACE,Financials
+9,ACN,Industrials
+10,ADBE,Technology
+11,ADI,Technology
+12,ADM,Non-Cyclical Consumer Goods & Services
+13,ADP,Industrials
+14,ADS,Industrials
+15,ADSK,Technology
+16,ADT,Technology
+17,AEE,Utilities
+18,AEP,Utilities
+19,AES,Utilities
+20,AET,Financials
+21,AFL,Financials
+22,AGN,None Found
+23,AIG,Financials
+24,AIV,Financials
+25,AIZ,Financials
+26,AKAM,Technology
+27,ALL,Financials
+28,ALLE,Technology
+29,ALTR,Technology
+30,ALXN,Healthcare
+31,AMAT,Technology
+32,AME,Industrials
+33,AMG,Financials
+34,AMGN,Healthcare
+35,AMP,Financials
+36,AMT,Financials
+37,AMZN,Cyclical Consumer Goods & Services
+38,AN,Cyclical Consumer Goods & Services
+39,ANTM,Financials
+40,AON,None Found
+41,APA,Energy
+42,APC,Energy
+43,APD,Basic Materials
+44,APH,Technology
+45,ARG,Basic Materials
+46,ATVI,Cyclical Consumer Goods & Services
+47,AVB,Financials
+48,AVGO,Technology
+49,AVY,Industrials
+50,AXP,Financials
+51,AZO,Cyclical Consumer Goods & Services
+52,BA,Industrials
+53,BAC,Financials
+54,BAX,Healthcare
+55,BBBY,Cyclical Consumer Goods & Services
+56,BBT,Financials
+57,BBY,Cyclical Consumer Goods & Services
+58,BCR,Healthcare
+59,BDX,Healthcare
+60,BEN,Financials
+61,BFB,None Found
+62,BHI,Energy
+63,BIIB,Healthcare
+64,BK,Financials
+65,BLK,Financials
+66,BLL,Basic Materials
+67,BMY,Healthcare
+68,BRCM,Technology
+69,BRKB,Financials
+70,BSX,Healthcare
+71,BWA,Cyclical Consumer Goods & Services
+72,BXLT,Healthcare
+73,BXP,Financials
+74,C,Financials
+75,CA,Technology
+76,CAG,Non-Cyclical Consumer Goods & Services
+77,CAH,Non-Cyclical Consumer Goods & Services
+78,CAM,Energy
+79,CAT,Industrials
+80,CB,Financials
+81,CBG,Financials
+82,CBS,Cyclical Consumer Goods & Services
+83,CCE,Non-Cyclical Consumer Goods & Services
+84,CCI,Financials
+85,CCL,Cyclical Consumer Goods & Services
+86,CELG,Healthcare
+87,CERN,Healthcare
+88,CF,Basic Materials
+89,CHK,Energy
+90,CHRW,Industrials
+91,CI,Financials
+92,CINF,Financials
+93,CL,Non-Cyclical Consumer Goods & Services
+94,CLX,Non-Cyclical Consumer Goods & Services
+95,CMA,Financials
+96,CMCSA,Cyclical Consumer Goods & Services
+97,CMCSK,Cyclical Consumer Goods & Services
+98,CME,Financials
+99,CMG,Cyclical Consumer Goods & Services
+100,CMI,Cyclical Consumer Goods & Services
+101,CMS,Utilities
+102,CNP,Utilities
+103,CNX,None Found
+104,COF,Financials
+105,COG,Energy
+106,COH,Cyclical Consumer Goods & Services
+107,COL,Industrials
+108,COP,Energy
+109,COST,Cyclical Consumer Goods & Services
+110,CPB,Non-Cyclical Consumer Goods & Services
+111,CPGX,Energy
+112,CRM,Technology
+113,CSC,Technology
+114,CSCO,Technology
+115,CSX,Industrials
+116,CTAS,Industrials
+117,CTL,Telecommunications Services
+118,CTSH,Technology
+119,CTXS,Technology
+120,CVC,Cyclical Consumer Goods & Services
+121,CVS,Non-Cyclical Consumer Goods & Services
+122,CVX,Energy
+123,D,Technology
+124,DAL,Industrials
+125,DD,Industrials
+126,DE,Industrials
+127,DFS,Financials
+128,DG,Cyclical Consumer Goods & Services
+129,DGX,Healthcare
+130,DHI,Cyclical Consumer Goods & Services
+131,DHR,Industrials
+132,DIS,Cyclical Consumer Goods & Services
+133,DISCA,Cyclical Consumer Goods & Services
+134,DISCK,Cyclical Consumer Goods & Services
+135,DLPH,Cyclical Consumer Goods & Services
+136,DLTR,Cyclical Consumer Goods & Services
+137,DNB,Industrials
+138,DO,Energy
+139,DOV,Industrials
+140,DOW,None Found
+141,DPS,Non-Cyclical Consumer Goods & Services
+142,DRI,Cyclical Consumer Goods & Services
+143,DTE,Utilities
+144,DUK,Utilities
+145,DVA,Healthcare
+146,DVN,Energy
+147,EA,Cyclical Consumer Goods & Services
+148,EBAY,Technology
+149,ECL,Industrials
+150,ED,Utilities
+151,EFX,Industrials
+152,EIX,Utilities
+153,EL,Non-Cyclical Consumer Goods & Services
+154,EMC,Technology
+155,EMN,Basic Materials
+156,EMR,Industrials
+157,ENDP,None Found
+158,EOG,Energy
+159,EQIX,Financials
+160,EQR,Financials
+161,EQT,Energy
+162,ES,Utilities
+163,ESRX,None Found
+164,ESS,Financials
+165,ESV,Energy
+166,ETFC,Financials
+167,ETN,None Found
+168,ETR,Utilities
+169,EW,Healthcare
+170,EXC,Utilities
+171,EXPD,Industrials
+172,EXPE,Cyclical Consumer Goods & Services
+173,F,Cyclical Consumer Goods & Services
+174,FAST,Industrials
+175,FB,Technology
+176,FCX,Basic Materials
+177,FDX,Industrials
+178,FE,Utilities
+179,FFIV,Technology
+180,FIS,Financials
+181,FISV,Industrials
+182,FITB,Financials
+183,FLIR,Technology
+184,FLR,Industrials
+185,FLS,Industrials
+186,FMC,Basic Materials
+187,FOSL,Cyclical Consumer Goods & Services
+188,FOX,None Found
+189,FOXA,Cyclical Consumer Goods & Services
+190,FSLR,Energy
+191,FTI,Energy
+192,FTR,Telecommunications Services
+193,GAS,None Found
+194,GD,Industrials
+195,GE,Industrials
+196,GGP,Financials
+197,GILD,Healthcare
+198,GIS,Non-Cyclical Consumer Goods & Services
+199,GLW,Technology
+200,GM,Cyclical Consumer Goods & Services
+201,GMCR,Non-Cyclical Consumer Goods & Services
+202,GME,Cyclical Consumer Goods & Services
+203,GNW,Financials
+204,GOOG,Technology
+205,GOOGL,Technology
+206,GPC,Cyclical Consumer Goods & Services
+207,GPS,Cyclical Consumer Goods & Services
+208,GRMN,Technology
+209,GS,Financials
+210,GT,Cyclical Consumer Goods & Services
+211,GWW,Industrials
+212,HAL,Energy
+213,HAR,Technology
+214,HAS,Cyclical Consumer Goods & Services
+215,HBAN,Financials
+216,HBI,Cyclical Consumer Goods & Services
+217,HCA,Healthcare
+218,HCBK,Financials
+219,HCN,Financials
+220,HCP,Financials
+221,HD,Cyclical Consumer Goods & Services
+222,HES,Energy
+223,HIG,Financials
+224,HOG,Cyclical Consumer Goods & Services
+225,HON,Industrials
+226,HOT,Cyclical Consumer Goods & Services
+227,HP,Technology
+228,HPQ,Technology
+229,HRB,Non-Cyclical Consumer Goods & Services
+230,HRL,Non-Cyclical Consumer Goods & Services
+231,HRS,Technology
+232,HSIC,Healthcare
+233,HST,Financials
+234,HSY,Non-Cyclical Consumer Goods & Services
+235,HUM,Healthcare
+236,IBM,Technology
+237,ICE,Financials
+238,IFF,Non-Cyclical Consumer Goods & Services
+239,INTC,Technology
+240,INTU,Technology
+241,IP,Basic Materials
+242,IPG,Cyclical Consumer Goods & Services
+243,IR,Industrials
+244,IRM,Financials
+245,ISRG,Healthcare
+246,ITW,Industrials
+247,IVZ,Financials
+248,JBHT,Industrials
+249,JCI,Cyclical Consumer Goods & Services
+250,JEC,Industrials
+251,JNJ,Healthcare
+252,JNPR,Technology
+253,JOY,Basic Materials
+254,JPM,Financials
+255,JWN,Cyclical Consumer Goods & Services
+256,K,Non-Cyclical Consumer Goods & Services
+257,KEY,Financials
+258,KHC,Non-Cyclical Consumer Goods & Services
+259,KIM,Financials
+260,KLAC,Technology
+261,KMB,Non-Cyclical Consumer Goods & Services
+262,KMI,Energy
+263,KMX,Cyclical Consumer Goods & Services
+264,KO,Non-Cyclical Consumer Goods & Services
+265,KORS,Cyclical Consumer Goods & Services
+266,KR,Non-Cyclical Consumer Goods & Services
+267,KSS,Cyclical Consumer Goods & Services
+268,KSU,Industrials
+269,L,None Found
+270,LB,Cyclical Consumer Goods & Services
+271,LEG,Cyclical Consumer Goods & Services
+272,LEN,Cyclical Consumer Goods & Services
+273,LH,Healthcare
+274,LLL,Industrials
+275,LLTC,Technology
+276,LLY,Healthcare
+277,LM,Financials
+278,LMT,Industrials
+279,LNC,Financials
+280,LOW,Cyclical Consumer Goods & Services
+281,LRCX,Technology
+282,LUK,Financials
+283,LUV,Industrials
+284,LVLT,Telecommunications Services
+285,LYB,Basic Materials
+286,M,Cyclical Consumer Goods & Services
+287,MA,Industrials
+288,MAC,Technology
+289,MAR,Cyclical Consumer Goods & Services
+290,MAS,Cyclical Consumer Goods & Services
+291,MAT,Cyclical Consumer Goods & Services
+292,MCD,Cyclical Consumer Goods & Services
+293,MCHP,Technology
+294,MCK,Non-Cyclical Consumer Goods & Services
+295,MCO,Industrials
+296,MDLZ,Non-Cyclical Consumer Goods & Services
+297,MDT,Healthcare
+298,MET,Financials
+299,MHFI,Industrials
+300,MHK,Cyclical Consumer Goods & Services
+301,MJN,Non-Cyclical Consumer Goods & Services
+302,MKC,Non-Cyclical Consumer Goods & Services
+303,MLM,Basic Materials
+304,MMC,Financials
+305,MMM,Industrials
+306,MNK,Healthcare
+307,MNST,Financials
+308,MO,Non-Cyclical Consumer Goods & Services
+309,MON,Non-Cyclical Consumer Goods & Services
+310,MOS,Basic Materials
+311,MPC,Energy
+312,MRK,Healthcare
+313,MRO,Energy
+314,MS,Financials
+315,MSFT,Technology
+316,MSI,Technology
+317,MTB,Financials
+318,MU,Technology
+319,MUR,Energy
+320,MYL,Healthcare
+321,NAVI,Financials
+322,NBL,Energy
+323,NDAQ,Financials
+324,NEE,Utilities
+325,NEM,Basic Materials
+326,NFLX,Technology
+327,NFX,Energy
+328,NI,None Found
+329,NKE,Cyclical Consumer Goods & Services
+330,NLSN,None Found
+331,NOC,Industrials
+332,NOV,Energy
+333,NRG,Utilities
+334,NSC,Industrials
+335,NTAP,Technology
+336,NTRS,Financials
+337,NUE,Basic Materials
+338,NVDA,Technology
+339,NWL,Non-Cyclical Consumer Goods & Services
+340,NWS,None Found
+341,NWSA,Cyclical Consumer Goods & Services
+342,O,Financials
+343,OI,Basic Materials
+344,OKE,Utilities
+345,OMC,Cyclical Consumer Goods & Services
+346,ORCL,Technology
+347,ORLY,Cyclical Consumer Goods & Services
+348,OXY,Energy
+349,PAYX,Industrials
+350,PBCT,Financials
+351,PBI,Technology
+352,PCAR,Industrials
+353,PCG,Utilities
+354,PCL,Financials
+355,PCLN,Cyclical Consumer Goods & Services
+356,PCP,Industrials
+357,PDCO,Healthcare
+358,PEG,Utilities
+359,PEP,Non-Cyclical Consumer Goods & Services
+360,PFE,Healthcare
+361,PFG,Financials
+362,PG,Non-Cyclical Consumer Goods & Services
+363,PGR,Financials
+364,PH,None Found
+365,PHM,Cyclical Consumer Goods & Services
+366,PKI,Healthcare
+367,PLD,Financials
+368,PM,Non-Cyclical Consumer Goods & Services
+369,PNC,Financials
+370,PNR,None Found
+371,PNW,Utilities
+372,POM,Utilities
+373,PPG,Basic Materials
+374,PPL,Utilities
+375,PRGO,None Found
+376,PRU,Financials
+377,PSA,Financials
+378,PSX,Energy
+379,PVH,Cyclical Consumer Goods & Services
+380,PWR,Industrials
+381,PX,Basic Materials
+382,PXD,Energy
+383,PYPL,Technology
+384,QCOM,Technology
+385,QRVO,Technology
+386,R,Industrials
+387,RAI,Non-Cyclical Consumer Goods & Services
+388,RCL,Cyclical Consumer Goods & Services
+389,REGN,Healthcare
+390,RF,Financials
+391,RHI,Industrials
+392,RHT,Technology
+393,RIG,Energy
+394,RL,Cyclical Consumer Goods & Services
+395,ROK,Industrials
+396,ROP,Industrials
+397,ROST,Cyclical Consumer Goods & Services
+398,RRC,Energy
+399,RSG,Industrials
+400,RTN,Industrials
+401,SBUX,Cyclical Consumer Goods & Services
+402,SCG,Utilities
+403,SCHW,Financials
+404,SE,Energy
+405,SEE,Basic Materials
+406,SHW,Basic Materials
+407,SIAL,Basic Materials
+408,SIG,Cyclical Consumer Goods & Services
+409,SJM,Non-Cyclical Consumer Goods & Services
+410,SLB,Energy
+411,SLG,Financials
+412,SNA,Industrials
+413,SNDK,Technology
+414,SNI,Cyclical Consumer Goods & Services
+415,SO,Utilities
+416,SPG,Financials
+417,SPLS,Cyclical Consumer Goods & Services
+418,SRCL,Industrials
+419,SRE,Utilities
+420,STI,Financials
+421,STJ,Healthcare
+422,STT,Financials
+423,STX,Technology
+424,STZ,Non-Cyclical Consumer Goods & Services
+425,SWK,Industrials
+426,SWKS,Technology
+427,SWN,Energy
+428,SYK,Healthcare
+429,SYMC,Technology
+430,SYY,Non-Cyclical Consumer Goods & Services
+431,T,Telecommunications Services
+432,TAP,Non-Cyclical Consumer Goods & Services
+433,TDC,Technology
+434,TE,Utilities
+435,TEL,Industrials
+436,TGNA,Cyclical Consumer Goods & Services
+437,TGT,Cyclical Consumer Goods & Services
+438,THC,Healthcare
+439,TIF,Cyclical Consumer Goods & Services
+440,TJX,Cyclical Consumer Goods & Services
+441,TMK,Financials
+442,TMO,Healthcare
+443,TRIP,Cyclical Consumer Goods & Services
+444,TROW,Financials
+445,TRV,Financials
+446,TSCO,Cyclical Consumer Goods & Services
+447,TSN,Non-Cyclical Consumer Goods & Services
+448,TSO,Energy
+449,TSS,Technology
+450,TWC,Cyclical Consumer Goods & Services
+451,TWX,Cyclical Consumer Goods & Services
+452,TXN,Technology
+453,TXT,Industrials
+454,TYC,None Found
+455,UA,Cyclical Consumer Goods & Services
+456,UAL,Industrials
+457,UHS,Healthcare
+458,UNH,Healthcare
+459,UNM,Financials
+460,UNP,Industrials
+461,UPS,Industrials
+462,URBN,Cyclical Consumer Goods & Services
+463,URI,Industrials
+464,USB,Financials
+465,UTX,Industrials
+466,V,Industrials
+467,VAR,Healthcare
+468,VFC,Cyclical Consumer Goods & Services
+469,VIAB,Cyclical Consumer Goods & Services
+470,VLO,Energy
+471,VMC,Basic Materials
+472,VNO,Financials
+473,VRSN,Technology
+474,VRTX,Healthcare
+475,VTR,Financials
+476,VZ,Telecommunications Services
+477,WAT,Healthcare
+478,WBA,Non-Cyclical Consumer Goods & Services
+479,WDC,Technology
+480,WEC,Utilities
+481,WFC,Financials
+482,WFM,Non-Cyclical Consumer Goods & Services
+483,WHR,Cyclical Consumer Goods & Services
+484,WM,Industrials
+485,WMB,Energy
+486,WMT,Cyclical Consumer Goods & Services
+487,WRK,Basic Materials
+488,WU,Industrials
+489,WY,Financials
+490,WYN,Cyclical Consumer Goods & Services
+491,WYNN,Cyclical Consumer Goods & Services
+492,XEC,Energy
+493,XEL,Utilities
+494,XL,Financials
+495,XLNX,Technology
+496,XOM,Energy
+497,XRAY,Healthcare
+498,XRX,Industrials
+499,XYL,Industrials
+500,YHOO,Technology
+501,YUM,Cyclical Consumer Goods & Services
+502,ZBH,Healthcare
+503,ZION,Financials
+504,ZTS,Healthcare

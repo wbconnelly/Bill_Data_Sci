@@ -39,14 +39,15 @@ for symb in sym_list:
 pd.concat(industry_list)
 company_sectors = pd.DataFrame(industry_list, columns = ['Symbol', 'Sector'])
 
-company_sectors.to_csv("C:/Users/William/Desktop/Git_Repos/Bill_Data_Sci/project/company_sectors.csv")
-company_sectors.rename(columns={'Symbol':'company_symbol'}, inplace = True)
+#company_sectors.to_csv("C:/Users/William/Desktop/Git_Repos/Bill_Data_Sci/project/company_sectors.csv")
+
 
 fin_data = pd.read_csv("C:/Users/William/Desktop/Git_Repos/Bill_Data_Sci/project/fin_data.csv")
-
+company_sectors = pd.read_csv("C:\Users\William\Desktop\Git_Repos\Bill_Data_Sci\project\company_sectors.csv")
+company_sectors.rename(columns={'Symbol':'company_symbol'}, inplace = True)
 company_data = pd.merge(fin_data, company_sectors, on = 'company_symbol')
 
-company_data.to_csv("C:/Users/William/Desktop/Git_Repos/Bill_Data_Sci/project/final_company_data.csv")
+#company_data.to_csv("C:/Users/William/Desktop/Git_Repos/Bill_Data_Sci/project/final_company_data.csv")
 
 
 company_data.company_symbol.value_counts()
