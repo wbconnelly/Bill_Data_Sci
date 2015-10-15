@@ -19,6 +19,7 @@ for i in range(0, len(sym_list)-1):
 dataset = pd.concat(data)
 #write data to csv
 dataset.to_csv("C:/Users/William/Desktop/Git_Repos/Bill_Data_Sci/project/fin_data.csv")
+#-----------------------------End API call
 
 # Web scraper to pull down the industry classification of all companies in the S&P 500
 sym_file = open("C:/Users/William/Desktop/Git_Repos/Bill_Data_Sci/project/symbol_list.txt")
@@ -168,10 +169,10 @@ print 'True Negatives:', TN
 print 'False Positives:', FP
 print 'False Negatives:', FN
 
-#True Positives: 56
-#True Negatives: 396
-#False Positives: 3
-#False Negatives: 29
+#True Positives: 81
+#True Negatives: 398
+#False Positives: 1
+#False Negatives: 4
 
 # I need a more systematic way of selecting features and a
 
@@ -188,4 +189,3 @@ print 'False Negatives:', FN
  'quarter',
  'restated',
 'company_cik']
-
