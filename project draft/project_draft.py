@@ -1,16 +1,10 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Oct 07 21:05:16 2015
-
-@author: William
-"""
-
 from bs4 import BeautifulSoup
 import urllib2 as ul
 import re
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn import metrics
+import numpy as np
 
 # Pull down yearly financial reporting data from the Kimono API
 
@@ -62,8 +56,8 @@ company_sectors.to_csv("C:/Users/William/Desktop/Git_Repos/Bill_Data_Sci/project
 #---------------------------------------------------------# End Web Scraper
 
 
-fin_data = pd.read_csv("C:/Users/William/Desktop/Git_Repos/Bill_Data_Sci/project/fin_data.csv")
-company_sectors = pd.read_csv("C:\Users\William\Desktop\Git_Repos\Bill_Data_Sci\project\company_sectors.csv")
+fin_data = pd.read_csv("https://raw.githubusercontent.com/wbconnelly/Bill_Data_Sci/master/project%20draft/fin_data.csv")
+company_sectors = pd.read_csv("https://raw.githubusercontent.com/wbconnelly/Bill_Data_Sci/master/project%20draft/company_sectors.csv")
 company_sectors.rename(columns={'Symbol':'company_symbol'}, inplace = True)
 
 # Company data is the unaveraged dataset
@@ -71,8 +65,6 @@ company_data = pd.merge(fin_data, company_sectors, on = 'company_symbol')
 
 #company_data.to_csv("C:/Users/William/Desktop/Git_Repos/Bill_Data_Sci/project/final_company_data.csv")
 
-
-company_data.company_symbol.value_counts()
 
 #get average values for each company across the years in the sample
 company_data.groupby('company_symbol').mean().shape
@@ -90,7 +82,7 @@ company_avg['ind_val'] = company_avg.index
 
 # get final dataset by reattaching the dummy values
 company_avg_sector = pd.merge(company_avg, y_vals, on = 'ind_val')
-
+company_avg_sector.drop('ind_val', axis = 1, inplace= True)
 
 # find the number of companies in each sector
 company_avg.Sector.value_counts()
@@ -107,7 +99,7 @@ for sector in company_data.Sector.unique():
     null_list[sector] = null_df
 
 company_avg_sector.columns
-null_list['Financials']
+
 # use logistic regression to try and predict the industry classifiaction based on well populated columns
 
     #look at the financials sector list and choose some suitable columns that have few missing values
@@ -115,14 +107,38 @@ null_list['Financials']
 
 from sklearn.linear_model import LogisticRegression
 logreg = LogisticRegression(C=1e9)
-feature_cols = ['retainedearnings', 'totalassets', 'totalrevenue']
+feature_cols = list(company_avg.loc[:, company_avg.dtypes == np.float64].columns)
+
+col_list_delete = ['extraordinaryitems',
+'deferredcharges',
+'accountingchange',
+'amended',
+'audited',
+'Unnamed: 0_y',
+ 'year',
+ 'quarter',
+ 'restated',
+'company_cik']
+
+for col in col_list_delete:
+    try:    
+        feature_cols.remove(col)    
+    except:
+        pass
+    
 x = company_avg_sector[feature_cols]
+#company_avg.loc[:, company_avg.dtypes == np.float64]
+
+#x.drop('Sector', axis = 1, inplace = True)
 #fill NaNs with the average of each column
-x = x.fillna(x.mean())
+
+x = x.fillna(company_avg[company_avg.Sector == 'Financials'].mean())
 y = company_avg_sector.Financials
 logreg.fit(x, y)
+
 #make predictions
 company_avg_sector['Financials_predicted'] = logreg.predict(x)
+
 #predict probabilities
 company_avg_sector['Financials_pred_prob'] = logreg.predict_proba(x)[:, 1]
 
@@ -134,7 +150,6 @@ plt.plot(probs_sorted)
 # print the accuracy
 print metrics.accuracy_score(y, company_avg_sector.Financials_predicted)
     # 0.933884297521
-
 
 # Create the confusion matrix
 
@@ -162,16 +177,15 @@ print 'False Negatives:', FN
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+# Do not use as features:
+['extraordinaryitems',
+'deferredcharges',
+'accountingchange',
+'amended',
+'audited',
+'Unnamed: 0_y',
+ 'year',
+ 'quarter',
+ 'restated',
+'company_cik']
 
