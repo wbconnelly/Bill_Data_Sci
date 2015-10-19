@@ -179,9 +179,9 @@ print metrics.accuracy_score(y, company_avg_sector.Financials_predicted)
 
 # Create the confusion matrix
 
-for sect in sector_list:
+for sector in sector_list:
     x = x[feature_cols]
-    y = y_vals[sect]
+    y = y_vals[sector]
     logreg.fit(x, y)
     x['predicted'] = logreg.predict(x)
     print sector, '---',metrics.accuracy_score(y, x.predicted)
