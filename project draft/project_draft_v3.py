@@ -196,13 +196,4 @@ for sect in sector_list:
     print 'False Negatives:', FN
 
 # save confusion matrix and slice into four pieces
-confusion = metrics.confusion_matrix(y, company_avg_sector.Financials_predicted)
-TP = confusion[1][1]
-TN = confusion[0][0]
-FP = confusion[0][1]
-FN = confusion[1][0]
 
-print 'True Positives:', TP
-print 'True Negatives:', TN
-print 'False Positives:', FP
-print 'False Negatives:', FN
