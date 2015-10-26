@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 import urllib2 as ul
-import re
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn import metrics
@@ -32,9 +31,6 @@ def print_page(Base):
     target = Base
     page = ul.urlopen(target)
     bs = BeautifulSoup(page.read())
-    #start = '<a id=sector href=[^.]*>(.+?)</a>' 
-    #pattern = re.compile(start)
-    #industry = re.findall(pattern, bs)
     try:
         industry =  bs.find(name = 'a', attrs = {'id':'sector'}).text
         return industry
@@ -99,8 +95,6 @@ for sector in company_data.Sector.unique():
 # use logistic regression to try and predict the industry classifiaction based on well populated columns
 
 from sklearn.linear_model import LogisticRegression
-logreg = LogisticRegression(C=1e9)
-
 
 feature_cols = list(company_avg.loc[:, company_avg.dtypes == np.float64].columns)
 
@@ -192,7 +186,7 @@ y_vals = pd.get_dummies(x.Sector)
 x.drop('Sector', axis = 1, inplace= True)
 feature_cols.remove('Sector')
 
-# use only the features that account for 99% of the variance
+# ------- use only the features that account for 99% of the variance --------- #
 def frange(init, end, step):
     steps = []    
     while init < end:
@@ -200,6 +194,8 @@ def frange(init, end, step):
         init += step
     return steps
 
+x = scaler.fit_transform(x[feature_cols])
+x = pd.DataFrame(x, columns = feature_cols)
 
 false_pred_dict = {}
 num_feat_dict = {}
@@ -211,7 +207,7 @@ for sector in sector_list:
     var_limit = []
     accuracy_list = []
     for var in frange(0.5,1,.01):
-        x = x[feature_cols]
+        
         x2 = x[var_list[sector]['col_title'][var_list[sector].total_var <= var]]
         y = y_vals[sector]
         logreg.fit(x2, y)
@@ -250,7 +246,7 @@ for sector in sector_list:
  'Technology',
  'Non-Cyclical Consumer Goods & Services'
 
-sector = 'Technology'
+sector = 'Industrials'
 plt.scatter(x = num_feat_dict[sector], y = var_limit_dict[sector])
 plt.scatter(x = num_feat_dict[sector], y = false_pred_dict[sector])
 plt.scatter(x = var_limit_dict[sector], y = false_pred_dict[sector])
@@ -259,15 +255,24 @@ plt.scatter(x = num_feat_dict[sector], y = accuracy_dict[sector])
 
 
 
-#original loop without stepping through variance levels
+# ------ original loop without stepping through variance levels ------ #
 
+x = scaler.fit_transform(x[feature_cols])
+x = pd.DataFrame(x, columns = feature_cols)
+
+model_list = {}
+feature_lists = {}
 for sector in sector_list:
-    x = x[feature_cols]
-    x2 = x[var_list[sector]['col_title'][var_list[sector].total_var <=.9999999999999]]
+    features = x[var_list[sector]['col_title'][var_list[sector].total_var <=.9999999999999]].columns
+    x2 = x[features]
+    #x2 = x[feature_cols]    
+    feature_lists[sector] = features
+    #feature_lists[sector] = feature_cols
     y = y_vals[sector]
-    logreg.fit(x2, y)
-    x2['predicted'] = logreg.predict(x2)
-    print sector, '---',metrics.accuracy_score(y, x2.predicted)
+    logreg = LogisticRegression(C=1)
+    model_list[sector] = logreg.fit(x2, y)
+    x2['predicted'] = model_list[sector].predict(x2)
+    print sector, '---',metrics.accuracy_score(y, x2.predicted), len(feature_lists[sector])
     confusion = metrics.confusion_matrix(y, x2.predicted)
     TP = confusion[1][1]
     TN = confusion[0][0]
@@ -279,9 +284,27 @@ for sector in sector_list:
     print 'False Negatives:', FN
 
 
+#----------------------- test the models ---------------------#
+x_test = pd.read_csv('C:/Users/William/Desktop/Git_Repos/Bill_Data_Sci/project_draft/x_test.csv')
+y_test = pd.read_csv('C:/Users/William/Desktop/Git_Repos/Bill_Data_Sci/project_draft/y_test.csv')
 
-
-
+for sector in sector_list:
+    x_cols = feature_lists[sector]
+    y = y_test[sector]
+    x_pred = model_list[sector].predict(x_test[x_cols])
+    print sector, '---',metrics.accuracy_score(y, x_pred)
+    confusion = metrics.confusion_matrix(y, x_pred)
+    TP = confusion[1][1]
+    TN = confusion[0][0]
+    FP = confusion[0][1]
+    FN = confusion[1][0]
+    print 'True Positives:', TP
+    print 'True Negatives:', TN
+    print 'False Positives:', FP
+    print 'False Negatives:', FN
+    
+    
+    
 #explore the variance
 
 #-------------------------#
